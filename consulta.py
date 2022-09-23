@@ -51,7 +51,7 @@ comeco = '''
         .td_titulo_tabela {
             padding: 12px 0;
             font-weight: bold;
-            background-color: #2f7bea;
+            background-color: #262626;
             text-align: center;
             font-size: 19px;
             color:#ffffff;
@@ -61,22 +61,13 @@ comeco = '''
         .td_titulo_campo {
             padding: 12px 0;
             font-weight: bold;
-            background-color: #2f7bea;
+            background-color: #262626;
             text-align: center;
             font-size: 19px;
             color:#ffffff;
             border-top-left-radius:5px;
             border-top-right-radius: 5px;
-        .subtitle {
-            padding: 12px 0;
-            font-weight: bold;
-            background-color: #2f7bea;
-            text-align: center;
-            font-size: 19px;
-            color:#ffffff;
-            border-top-left-radius:5px;
-            border-top-right-radius: 5px;
-        }
+      
         .key {
             font-size: 140%;
             width: 240px;
