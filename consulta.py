@@ -48,6 +48,25 @@ comeco = '''
             background-color: #faf7eb;
             text-align: center;
         }
+        .td_titulo_tabela {
+            padding: 12px 0;
+            font-weight: bold;
+            background-color: #121212;
+            text-align: center;
+            font-size: 19px;
+            color:#ffffff;
+            border-top-left-radius:5px;
+            border-top-right-radius: 5px;
+        }
+        .td_titulo_campo {
+            padding: 12px 0;
+            font-weight: bold;
+            background-color: #2f7bea;
+            text-align: center;
+            font-size: 19px;
+            color:#ffffff;
+            border-top-left-radius:5px;
+            border-top-right-radius: 5px;
         .subtitle {
             padding: 12px 0;
             font-weight: bold;
