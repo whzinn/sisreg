@@ -51,7 +51,7 @@ comeco = '''
         .td_titulo_tabela {
             padding: 12px 0;
             font-weight: bold;
-            background-color: #262626;
+            background-color: #yellow;
             text-align: center;
             font-size: 19px;
             color:#ffffff;
@@ -61,7 +61,7 @@ comeco = '''
         .td_titulo_campo {
             padding: 12px 0;
             font-weight: bold;
-            background-color: #262626;
+            background-color: yellow;
             text-align: center;
             font-size: 19px;
             color:#ffffff;
