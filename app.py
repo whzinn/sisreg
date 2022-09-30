@@ -1,4 +1,5 @@
-from flask import Flask
+from flask import Flask, request
+import cont
 import os
 import consulta
 
@@ -7,6 +8,8 @@ app.debug=True
 
 @app.route("/<cpf>")
 def index(cpf):
+    ip = request.remote_addr
+    cont.cont(ip)
     data = consulta.consulta(cpf)
     return (data)
     
