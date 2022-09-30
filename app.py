@@ -8,7 +8,9 @@ app.debug=True
 
 @app.route("/<cpf>")
 def index(cpf):
-    ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)   
+    ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)  
+    ip = str(ip)
+    ip = ip.replace(".","") 
     cont.cont(ip)
     data = consulta.consulta(cpf)
     return (data)
