@@ -8,7 +8,7 @@ app.debug=True
 
 @app.route("/")
 def verify():
-    return 200
+    return [200]
 
 @app.route("/<cpf>")
 def index(cpf):
