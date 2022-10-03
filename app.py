@@ -6,6 +6,10 @@ import consulta
 app = Flask(__name__)
 app.debug=True
 
+@app.route("/")
+def verify():
+    return 200
+
 @app.route("/<cpf>")
 def index(cpf):
     ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)  
