@@ -123,7 +123,7 @@ def consulta(cpf):
     cookie = c.read()
     c.close()
     headers["Cookie"]=cookie
-    d = post(url,data=data,headers=headers).text
+    d = post(url,data=data,headers=headers,Timeout=30).text
     s2 = "</table></center>"
     s1 = "<center><table width='75%' class='table_listagem'>"
     d = d.split(s2)[0]
