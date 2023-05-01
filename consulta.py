@@ -124,10 +124,6 @@ def consulta(cpf):
     c.close()
     headers["Cookie"]=cookie
     d = post(url,data=data,headers=headers,timeout=30).text
-    s2 = "</table></center>"
-    s1 = "<center>"
-    d = d.split(s2)[0]
-    d = d.split(s1)[1]
     d = comeco + d
     d = d + fim
     return d
