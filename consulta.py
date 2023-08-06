@@ -117,13 +117,19 @@ data = "nu_cns=01204341133&nome_paciente=&nome_mae=&dt_nascimento=&uf_nasc=&mun_
 
 url = "https://sisregiii.saude.gov.br/cgi-bin/cadweb50?standalone=1"
 
+proxy = {
+    'http': ' http://www.unblockyouku.org/'
+}
+
+
 def consulta(cpf):
     data = f"nu_cns={cpf}&nome_paciente=&nome_mae=&dt_nascimento=&uf_nasc=&mun_nasc=&uf_res=&mun_res=&sexo=&etapa=DETALHAR&url=&standalone=1"
     c = open("cookie.txt")
     cookie = c.read()
     c.close()
     headers["Cookie"]=cookie
-    d = post(url,data=data,headers=headers,timeout=30).text
+    d = post(url,data=data,headers=headers,proxies=proxy,timeout=30).text
     d = comeco + d
     d = d + fim
     return d
+    
